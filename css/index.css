@@ -1,5 +1,6 @@
 :root {
     --main-color: black;
+    width: 100%;
     scroll-behawior: smooth;
 }
 
@@ -15,13 +16,21 @@ header {
     background-image: url(../img/fabia.jpg);
     background-size: cover;
     background-position: center;
+    max-width: 1200px;
+    min-width: 320px;
+    padding-top: 90px;
+    padding-bottom: 90px;
     min-height: 900px;
 }
  .first-leaf a {
     text-decoration: none;
-    padding: 0px 0px 10px 10px;  
-    background-color: blue;  
+    background-color: rgb(16, 136, 228); 
     color: white;
+    border-width: 1px;
+    border-radius: 25px;
+    border-color: transparent;
+    border-style: solid;
+    padding: 16px 28px;
  }
  .first-leaf p {
      color: rgb(16, 136, 228);
