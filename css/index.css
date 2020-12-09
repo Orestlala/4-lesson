@@ -4,7 +4,6 @@
 }
 
 nav { 
-    background-color: white;
     text-align: center;
 }
 .burger-menu a {
@@ -12,7 +11,7 @@ nav {
     color: black;
     text-decoration: none;
 }
-.first-leaf {
+header {
     background-image: url(../img/fabia.jpg);
     background-size: cover;
     background-position: center;
@@ -23,6 +22,15 @@ nav {
     padding: 0px 0px 10px 10px;  
     background-color: blue;  
     color: white;
+ }
+ .first-leaf p {
+     color: rgb(16, 136, 228);
+     font-weight: bold;
+     font-size: 18px;
+ }
+ .first-leaf h1{
+     font-size: 200px;
+     color: rgb(246, 196, 61);
  }
  .classes {
      text-align: center;
