@@ -1,9 +1,9 @@
 :root {
     --main-color: black;
+    min-width: 320px; 
     width: 100%;
-    scroll-behawior: smooth;
+    scroll-behavior: smooth;
 }
-
 nav { 
     text-align: center;
 }
@@ -22,7 +22,21 @@ header {
     padding-bottom: 90px;
     min-height: 900px;
 }
- .first-leaf a {
+ .first-leaf p {
+     color: rgb(16, 136, 228);
+     font-weight: bold;
+     font-size: 14px;
+ }
+ .first-leaf h1{
+     font-size: 70px;
+     color: rgb(246, 196, 61);
+     position: absolute;
+     text-align: left;
+ }
+.first-leaf article {
+    margin-top: 700px;
+}
+  .first-leaf a {
     text-decoration: none;
     background-color: rgb(16, 136, 228); 
     color: white;
@@ -32,16 +46,23 @@ header {
     border-style: solid;
     padding: 16px 28px;
  }
- .first-leaf p {
-     color: rgb(16, 136, 228);
-     font-weight: bold;
-     font-size: 18px;
+ @media (min-width:500px) {
+    .first-leaf p {
+     font-size: 22px;
+}
+.first-leaf h1{
+     font-size: 110px;
  }
- .first-leaf h1{
-     font-size: 200px;
-     color: rgb(246, 196, 61);
  }
- .classes {
+ @media (min-width:800px) {
+         .first-leaf p {
+     font-size: 40px;
+}
+.first-leaf h1{
+     font-size: 160px;
+ }
+ }
+  .classes {
      text-align: center;
      max-width: 100%;
  }
