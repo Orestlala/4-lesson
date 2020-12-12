@@ -7,6 +7,7 @@
     min-width: 320px; 
     max-width: 1200px;
     scroll-behavior: smooth;
+    margin: auto;
 }
 .burger-menu a {
     display: block;
@@ -16,11 +17,10 @@
 header {
     background-image: url(../img/fabia.jpg);
     background-size: cover;
-    background-position: ;
+    background-position: center;
     min-width: 320px;
-    padding-top: 90px;
-    padding-bottom: 90px;
     min-height: 900px;
+    padding: 10px;
 }
     @media (min-width:800px) {
        header nav  {
@@ -34,6 +34,7 @@ header {
         flex: 0.5;
         justify-content: space-around;
         align-items: center;
+        
     }
  }
  .first-leaf p {
@@ -48,7 +49,7 @@ header {
      text-align: left;
  }
 .first-leaf article {
-    margin-top: 700px;
+    margin-top: 600px;
 }
   .first-leaf a {
     text-decoration: none;
@@ -59,9 +60,12 @@ header {
     border-color: transparent;
     border-style: solid;
     padding: 16px 28px;
+    margin-bottom: 100px; 
+    
  }
  @media (min-width:500px) {
     .first-leaf p {
+    margin-top: 30px;
      font-size: 22px;
 }
 .first-leaf h1{
@@ -78,8 +82,42 @@ header {
  }
   .classes {
      text-align: center;
-     max-width: 100%;
+     max-width: 1200px;
+     display: center;
  }
+    .classes {
+        margin-top: 50px;
+    }
+    .classes article p {
+        margin: auto;
+        max-width: 300px;
+        text-align: center;
+        padding: 20px;
+ }
+ @media (min-width: 700px) {
+      .classes article p {
+        max-width: 700px;
+      }
+    }
+    .classes article img {
+        max-width: 300px;
+ }
+ @media (min-width: 700px) {
+      .classes article img {
+        max-width: 700px;
+ }
+}
+    .classes article a {
+        text-decoration: none;
+        background-color: rgb(16, 136, 228); 
+        color: white;
+        border-width: 1px;
+        border-radius: 25px;
+        border-color: transparent;
+        border-style: solid;
+        padding: 16px 28px;
+        margin-top: 100px; 
+    }
  .map {
 
  }
