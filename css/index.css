@@ -88,6 +88,10 @@ header {
     .classes {
         margin-top: 50px;
     }
+}
+    .classes article {
+        text-align: center;
+    }
     .classes article p {
         margin: auto;
         max-width: 300px;
@@ -96,17 +100,18 @@ header {
  }
  @media (min-width: 700px) {
       .classes article p {
-        max-width: 700px;
+        max-width: 300px;
+        text-align: center;
       }
+      .classes article img {
+        max-width: 300px;
+    }
     }
     .classes article img {
         max-width: 300px;
  }
- @media (min-width: 700px) {
-      .classes article img {
-        max-width: 700px;
- }
-}
+
+
     .classes article a {
         text-decoration: none;
         background-color: rgb(16, 136, 228); 
