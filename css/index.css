@@ -42,11 +42,13 @@ header {
 }
 header nav  {
     flex: 1;
+    text-align: center;
+
 }
 header nav ul {
     list-style: none;
 }
-@media (min-width:800px) {
+@media (min-width:650px) {
     header nav  {
         display: flex;
         justify-content: flex-end;
@@ -106,35 +108,33 @@ header .container {
     border-style: solid;
     padding: 16px 28px;
     margin-bottom: 100px; 
-    
  }
- @media (min-width:500px) {
-.first-leaf p {
-     font-size: 22px;
-}
-.first-leaf h1{
-     font-size: 110px;
+        @media (min-width:500px) {
+        .first-leaf p {
+            font-size: 22px;
+        }
+        .first-leaf h1{
+            font-size: 110px;
+        }
+        }
+        @media (min-width:800px) {
+            .first-leaf p {
+                font-size: 40px;
+            }
+            .first-leaf h1{
+                font-size: 160px;
+            }
  }
+ .buttons-wrap {
+     margin: 50px 0 ;
  }
- @media (min-width:800px) {
-    .first-leaf p {
-         font-size: 40px;
-    }
-    .first-leaf h1{
-         font-size: 160px;
-    }
- }
-.classes {
-     text-align: center;
-     max-width: 1200px;
-     display: center;
-}
     .classes {
-        margin-top: 50px;
-    }
-    .classes article {
-        text-align: center;
-    }
+     text-align: center;
+     max-width: auto;
+     display: center;
+     margin-top: 50px;
+
+}
     .classes article p {
         margin: auto;
         max-width: 300px;
