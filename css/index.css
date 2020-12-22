@@ -166,6 +166,25 @@ header .container {
         padding: 16px 28px;
         margin-top: 100px; 
     }
+.timer_block {
+    text-align: center;
+
+}
+.timer_block span {
+    color: rgb(246, 196, 61);
+}
+.timer_block a {
+    text-decoration: none;
+    background-color: rgb(16, 136, 228);
+    color: white;
+    border-width: 1px;
+    border-radius: 25px;
+    border-color: transparent;
+    border-style: solid;
+    padding: 16px 28px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
 /* .map { */
 
 /* } */
