@@ -31,8 +31,12 @@ html {
         max-width: calc(100% - 120px);
     }
 }
-
-
+h2 {
+    font-size: 60px;
+}
+h4 {
+    font-size: 40px;
+}
 header {
     position: absolute;
     top: 0;
@@ -129,33 +133,38 @@ header .container {
      margin: 50px 0 ;
  }
     .classes {
-     text-align: center;
-     max-width: auto;
-     display: center;
-     margin-top: 50px;
-
+    text-align: center;
+    max-width: auto;
+    margin-top: 50px;
 }
     .classes article p {
         margin: auto;
         max-width: 300px;
+        min-height: 200px;
         text-align: center;
         padding: 20px;
      }
  @media (min-width: 700px) {
-      .classes article p {
+    .classes article p {
         max-width: 300px;
         text-align: center;
       }
-      .classes article img {
-        max-width: 300px;
-        }
-}
+    }
+    @media (min-width: 1000px) {
+        .classes {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+     }
+          .classes article {
+         max-width: 30%;
+     }
+    }
 .classes article img {
         max-width: 300px;
-}
-
-
-    .classes article a {
+        min-height: 200px;
+     }
+.classes article a {
         text-decoration: none;
         background-color: rgb(16, 136, 228); 
         color: white;
@@ -166,6 +175,30 @@ header .container {
         padding: 16px 28px;
         margin-top: 100px; 
     }
+ #aboutus {
+    min-height: 500px;
+    background-image: url(../img/peugeot.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+ }   
+ #aboutus article{
+        max-width: 30%;
+        text-align: justify;
+        line-height: 60px;
+        min-height: 100vh;
+        margin-left: 10%;
+        background-color: rgba(192, 192, 192, 0.64);
+        background-size: cover;
+        background-position: center;
+        border-radius: 25px;
+        padding: 20px;
+        
+ }
+ @media (max-width: 1000px) {
+      #aboutus article{
+        max-width: 60%;
+ }
 .timer_block {
     text-align: center;
 
