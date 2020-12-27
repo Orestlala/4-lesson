@@ -1,5 +1,4 @@
 //Відлік
-;
 
 const startTime = new Date();
 function updateTimer() {
