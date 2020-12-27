@@ -132,6 +132,16 @@ header .container {
  .buttons-wrap {
      margin: 50px 0 ;
  }
+ .timer_block #timer{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 55px;
+ }
+ .timer_block .timer {
+     margin: 25px;
+     font-size: 40px;
+ }
     .classes {
     text-align: center;
     max-width: auto;

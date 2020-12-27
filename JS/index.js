@@ -10,6 +10,9 @@ function updateTimer() {
     const hourLeft = Math.floor((diffSecs / 60 / 60) % 24);
     const minuteLeft = Math.floor((diffSecs / 60) % 60);
     const secsLeft = Math.floor(diffSecs % 60);
-    document.querySelector(".timer").innerText = dayLeft + ":" + hourLeft + ":" + minuteLeft + ":" + secsLeft;
+    document.querySelector("#day").innerText = dayLeft;
+    document.querySelector("#hour").innerText = hourLeft;
+    document.querySelector("#minute").innerText = minuteLeft;
+    document.querySelector("#second").innerText = secsLeft;
 }
 setInterval(updateTimer, 1000)
