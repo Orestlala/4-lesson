@@ -1,22 +1,37 @@
+const images = [
+    "img/subaru.svg" ,
+    "img/ford.svg" ,
+    "img/hyundai.svg" , 
+    "img/volkswagen.svg" ,
+    "img/chevrolet.svg"
+]
 
-let i = 1;
-    for(let li of carousel.querySelectorAll('li')) {
-      li.style.position = 'relative';
-      li.insertAdjacentHTML('beforeend', `<span style="position:absolute;left:0;top:0">${i}</span>`);
-      i++;
-    }
-    let width = 130; 
-    let count = 3;
-    let list = carousel.querySelector('ul');
-    let listElems = carousel.querySelectorAll('li');
-    let position = 0;
-    carousel.querySelector('.prev').onclick = function() {
-      position += width * count;
-      position = Math.min(position, 0)
-      list.style.marginLeft = position + 'px';
-    };
-    carousel.querySelector('.next').onclick = function() {
-      position -= width * count;
-      position = Math.max(position, -width * (listElems.length - count));
-      list.style.marginLeft = position + 'px';
-    };
+let currentIdx = 0;
+function showCurrent () {
+    const imgElement1 = document.querySelector('.carousel .img1');
+    const imgElement2 = document.querySelector('.carousel .img2');
+    const imgElement3 = document.querySelector('.carousel .img3');
+    imgElement1.src = images[currentIdx];
+    const idx2 = currentIdx + 1 >= images.length ? 0 : currentIdx +1;
+    const idx3 = idx2 + 1 > images.length ? 0 : idx2 + 1;
+    imgElement1.src = images[currentIdx];
+    imgElement2.src = images[idx2];
+    imgElement3.src = images[idx3];
+}
+
+function nextIdx() {
+    currentIdx++;
+    if (currentIdx >= images.length) currentIdx = 0;
+    showCurrent();
+}
+
+function prevIdx() {
+    currentIdx--;
+    if (currentIdx < 0) currentIdx = images.length - 1;
+    showCurrent();
+}
+
+setInterval(nextIdx, 3000);
+document.querySelector('.carousel .next').addEventListener('click', nextIdx);
+document.querySelector('.carousel .prev').addEventListener('click', prevIdx);
+
