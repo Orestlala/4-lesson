@@ -31,7 +31,7 @@ function prevIdx() {
     showCurrent();
 }
 
-setInterval(nextIdx, 3000);
-document.querySelector('.carousel .next').addEventListener('click', nextIdx);
-document.querySelector('.carousel .prev').addEventListener('click', prevIdx);
+setInterval(nextIdx, 5000);
+//document.querySelector('.carousel .next').addEventListener('click', nextIdx);
+//document.querySelector('.carousel .prev').addEventListener('click', prevIdx);
 

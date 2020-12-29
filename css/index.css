@@ -142,6 +142,26 @@ header .container {
      margin: 25px;
      font-size: 40px;
  }
+ .timer_block {
+    text-align: center;
+    margin-bottom: 100px;;
+}
+.timer_block span {
+    color: rgb(246, 196, 61);
+}
+.timer_block a {
+    text-decoration: none;
+    background-color: rgb(16, 136, 228);
+    color: white;
+    border-width: 1px;
+    border-radius: 25px;
+    border-color: transparent;
+    border-style: solid;
+    padding: 16px 28px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    line-height: 100px;
+}
     .classes {
     text-align: center;
     max-width: auto;
@@ -184,6 +204,7 @@ header .container {
         border-style: solid;
         padding: 16px 28px;
         margin-top: 100px; 
+        line-height: 100px;
     }
  #aboutus {
     min-height: 500px;
@@ -216,43 +237,25 @@ header .container {
         padding: 20px;
         
  }
- @media (max-width: 1000px) {
+     @media (max-width: 1000px) {
       #aboutus article{
         max-width: 60%;
+     }
  }
-}
-.timer_block {
-    text-align: center;
-
-}
-.timer_block span {
-    color: rgb(246, 196, 61);
-}
-.timer_block a {
-    text-decoration: none;
-    background-color: rgb(16, 136, 228);
-    color: white;
-    border-width: 1px;
-    border-radius: 25px;
-    border-color: transparent;
-    border-style: solid;
-    padding: 16px 28px;
-    margin-bottom: 100px;
-    margin-top: 100px;
-}
-.carousel {
-  position: relative;
-  width: auto;
-  padding: 10px 40px;
-  border: 1px solid #CCC;
-  border-radius: 15px;
-  background: #eee;
-}
+ .carousel {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: auto;
+    padding: 40px 40px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    background: rgba(103, 105, 104, 0.196);
+ }
 .carousel img {
-  width: 130px;
-  height: 130px;
-}
-
+    width: 130px;
+    height: 130px;
+ }
 /* .map { */
 
 /* } */
