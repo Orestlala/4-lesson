@@ -20,7 +20,10 @@ html {
     font-weight: bold;
     scroll-behavior: smooth;
 }
-
+.yellow {
+    color:  rgb(16, 136, 228);
+    font-size: 200%;
+}
 .container {
     width: 1170px;
     max-width: calc(100% - 48px);
